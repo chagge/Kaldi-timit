@@ -1,0 +1,94 @@
+
+
+
+============================================================================
+"                     MonoPhone Training & Decoding                        "
+============================================================================
+%WER 33.34 [ 5020 / 15057, 388 ins, 1710 del, 2922 sub ] exp/mono/decode_dev/wer_3
+%WER 34.77 [ 2509 / 7215, 179 ins, 841 del, 1489 sub ] exp/mono/decode_test/wer_3
+
+
+============================================================================
+"           tri1 : Deltas + Delta-Deltas Training & Decoding               "
+============================================================================
+%WER 28.72 [ 4325 / 15057, 539 ins, 1246 del, 2540 sub ] exp/tri1/decode_dev/wer_6
+%WER 30.33 [ 2188 / 7215, 276 ins, 644 del, 1268 sub ] exp/tri1/decode_test/wer_6
+
+============================================================================
+"                 tri2 : LDA + MLLT Training & Decoding                    "
+============================================================================
+%WER 26.28 [ 3957 / 15057, 582 ins, 1047 del, 2328 sub ] exp/tri2/decode_dev/wer_5
+%WER 27.68 [ 1997 / 7215, 255 ins, 599 del, 1143 sub ] exp/tri2/decode_test/wer_6
+
+
+============================================================================
+"              tri3 : LDA + MLLT + SAT Training & Decoding                 "
+============================================================================
+%WER 23.25 [ 3500 / 15057, 458 ins, 1021 del, 2021 sub ] exp/tri3/decode_dev/wer_4
+%WER 26.56 [ 3999 / 15057, 523 ins, 1097 del, 2379 sub ] exp/tri3/decode_dev.si/wer_5
+%WER 25.14 [ 1814 / 7215, 205 ins, 551 del, 1058 sub ] exp/tri3/decode_test/wer_5
+%WER 27.96 [ 2017 / 7215, 199 ins, 649 del, 1169 sub ] exp/tri3/decode_test.si/wer_7
+
+
+============================================================================
+"                        SGMM2 Training & Decoding                         "
+============================================================================
+%WER 21.22 [ 3195 / 15057, 407 ins, 936 del, 1852 sub ] exp/sgmm2_4/decode_dev/wer_4
+%WER 22.44 [ 1619 / 7215, 188 ins, 510 del, 921 sub ] exp/sgmm2_4/decode_test/wer_5
+
+
+============================================================================
+"                    MMI + SGMM2 Training & Decoding                       "
+============================================================================
+%WER 20.95 [ 3155 / 15057, 454 ins, 838 del, 1863 sub ] exp/sgmm2_4_mmi_b0.1/decode_dev_it1/wer_5
+%WER 20.70 [ 3117 / 15057, 459 ins, 815 del, 1843 sub ] exp/sgmm2_4_mmi_b0.1/decode_dev_it2/wer_6
+%WER 20.73 [ 3122 / 15057, 553 ins, 695 del, 1874 sub ] exp/sgmm2_4_mmi_b0.1/decode_dev_it3/wer_5
+%WER 20.76 [ 3126 / 15057, 583 ins, 677 del, 1866 sub ] exp/sgmm2_4_mmi_b0.1/decode_dev_it4/wer_5
+%WER 21.75 [ 1569 / 7215, 212 ins, 455 del, 902 sub ] exp/sgmm2_4_mmi_b0.1/decode_test_it1/wer_6
+%WER 21.84 [ 1576 / 7215, 219 ins, 442 del, 915 sub ] exp/sgmm2_4_mmi_b0.1/decode_test_it2/wer_7
+%WER 22.04 [ 1590 / 7215, 267 ins, 397 del, 926 sub ] exp/sgmm2_4_mmi_b0.1/decode_test_it3/wer_6
+%WER 22.09 [ 1594 / 7215, 249 ins, 416 del, 929 sub ] exp/sgmm2_4_mmi_b0.1/decode_test_it4/wer_7
+
+
+============================================================================
+"                    DNN Hybrid Training & Decoding                        "
+============================================================================
+%WER 19.72 [ 2969 / 15057, 411 ins, 881 del, 1677 sub ] exp/dnn4b_pretrain-dbn_dnn/decode_dev/wer_2
+%WER 21.79 [ 1572 / 7215, 195 ins, 489 del, 888 sub ] exp/dnn4b_pretrain-dbn_dnn/decode_test/wer_3
+
+%WER 19.53 [ 2940 / 15057, 409 ins, 830 del, 1701 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr/decode_dev_it1/wer_4
+%WER 21.32 [ 1538 / 7215, 259 ins, 370 del, 909 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr/decode_test_it1/wer_3
+
+%WER 19.45 [ 2929 / 15057, 391 ins, 836 del, 1702 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_dev_iter1/wer_5
+%WER 19.37 [ 2916 / 15057, 495 ins, 719 del, 1702 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_dev_iter2/wer_4
+%WER 19.37 [ 2917 / 15057, 528 ins, 683 del, 1706 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_dev_iter3/wer_4
+%WER 19.32 [ 2909 / 15057, 480 ins, 738 del, 1691 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_dev_iter4/wer_5
+%WER 21.25 [ 1533 / 7215, 253 ins, 369 del, 911 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_test_iter1/wer_4
+%WER 21.37 [ 1542 / 7215, 273 ins, 349 del, 920 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_test_iter2/wer_4
+%WER 21.43 [ 1546 / 7215, 225 ins, 407 del, 914 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_test_iter3/wer_6
+%WER 21.39 [ 1543 / 7215, 266 ins, 358 del, 919 sub ] exp/dnn4b_pretrain-dbn_dnn_smbr_i1lats/decode_test_iter4/wer_5
+
+
+============================================================================
+"                    System Combination (DNN+SGMM)                         "
+============================================================================
+%WER 18.87 [ 2842 / 15057, 376 ins, 789 del, 1677 sub ] exp/combine_2/decode_dev_it1/wer_3
+%WER 18.71 [ 2817 / 15057, 404 ins, 745 del, 1668 sub ] exp/combine_2/decode_dev_it2/wer_3
+%WER 18.66 [ 2809 / 15057, 426 ins, 718 del, 1665 sub ] exp/combine_2/decode_dev_it3/wer_3
+%WER 18.65 [ 2808 / 15057, 430 ins, 708 del, 1670 sub ] exp/combine_2/decode_dev_it4/wer_3
+%WER 20.60 [ 1486 / 7215, 209 ins, 412 del, 865 sub ] exp/combine_2/decode_test_it1/wer_3
+%WER 20.73 [ 1496 / 7215, 237 ins, 381 del, 878 sub ] exp/combine_2/decode_test_it2/wer_3
+%WER 20.86 [ 1505 / 7215, 221 ins, 408 del, 876 sub ] exp/combine_2/decode_test_it3/wer_4
+%WER 20.71 [ 1494 / 7215, 231 ins, 407 del, 856 sub ] exp/combine_2/decode_test_it4/wer_4
+
+%WER 20.44 [ 1475 / 7215, 203 ins, 420 del, 852 sub ] exp/combine_2_smbr/decode_test_it1/wer_5
+%WER 20.57 [ 1484 / 7215, 166 ins, 458 del, 860 sub ] exp/combine_2_smbr/decode_test_it2/wer_7
+%WER 20.67 [ 1491 / 7215, 240 ins, 386 del, 865 sub ] exp/combine_2_smbr/decode_test_it3/wer_5
+%WER 20.69 [ 1493 / 7215, 213 ins, 410 del, 870 sub ] exp/combine_2_smbr/decode_test_it4/wer_6
+
+
+
+
+
+
+
