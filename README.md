@@ -25,8 +25,4 @@ Convolutional Neural Network
 ----
 * CNN scripts will not be released in five months, becuse of some confidentiality agreement.
 
-TODO(before July)
-----
-* Add fbank feature DNN
-* add dropout 
-* add relu
+
