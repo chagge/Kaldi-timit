@@ -1,0 +1,13 @@
+
+
+
+
+============================================================================
+"                    DNN Hybrid Training & Decoding                        "
+============================================================================
+%WER 19.72 [ 2969 / 15057, 411 ins, 881 del, 1677 sub ] exp/dnn4b_pretrain-dbn_dnn/decode_dev/wer_2
+%WER 21.79 [ 1572 / 7215, 195 ins, 489 del, 888 sub ] exp/dnn4b_pretrain-dbn_dnn/decode_test/wer_3
+
+# Dropout 
+%WER 19.76 [ 2976 / 15057, 332 ins, 968 del, 1676 sub ] exp/dnn4b_pretrain-dbn_dnn_dropout-new/decode_dev/wer_3
+%WER 21.18 [ 1528 / 7215, 158 ins, 511 del, 859 sub ] exp/dnn4b_pretrain-dbn_dnn_dropout-new/decode_test/wer_4
